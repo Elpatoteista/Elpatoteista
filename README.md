@@ -3,9 +3,9 @@
 <!-- Animated Typing Header -->
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=FF3B3F&center=true&vCenter=true&width=600&height=60&lines=%F0%9F%95%B7%EF%B8%8F+Hey%2C+I'm+Patricio!;AI+%26+Computer+Vision+Enthusiast;Building+intelligent+systems...;Dribbling+code+%26+basketballs+%F0%9F%8F%80" alt="Typing SVG" /></a>
 
-<!-- Spinning ASCII Basketball -->
+<!-- Bouncing Basketball -->
 <br>
-<img src="./spinning_ball.svg" width="200" alt="spinning basketball"/>
+<img src="./spinning_ball.svg" width="180" alt="bouncing basketball"/>
 <br>
 
 </div>
@@ -14,13 +14,17 @@
 
 ### 🔭 What I'm Working On
 
+<table>
+<tr>
+<td>
+
 ```python
 class Patricio:
     def __init__(self):
-        self.role     = "Computer Engineering Student"
-        self.focus    = ["AI", "Computer Vision", "Medical Tech"]
-        self.hobbies  = ["🏀 Basketball", "🏃 Running", "🌎 Culture"]
-        self.motto    = "One landmark at a time."
+        self.role    = "Computer Engineering Student"
+        self.focus   = ["AI", "Computer Vision", "Medical Tech"]
+        self.hobbies = ["🏀 Basketball", "🏃 Running", "🌎 Culture"]
+        self.motto   = "One landmark at a time."
 
     def current_project(self):
         return {
@@ -29,6 +33,10 @@ class Patricio:
             "goal": "Detect strokes & fainting in real-time"
         }
 ```
+
+</td>
+</tr>
+</table>
 
 > 🚀 **[detector-emergencia-ia](https://github.com/Elpatoteista/detector-emergencia-ia)** — A real-time Computer Vision system using MediaPipe and OpenCV to detect sudden medical emergencies through facial asymmetry and body posture analysis.
 
@@ -55,17 +63,6 @@ class Patricio:
 | 🇬🇧 English (B2/C1) | On the court — Playing basketball |
 | 🇪🇸 Spanish (Native) | On the run — Chasing new personal bests |
 | 🌍 Culture seeker | Always learning new perspectives |
-
----
-
-### 📊 GitHub Stats
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=Elpatoteista&show_icons=true&theme=radical&title_color=FF3B3F&icon_color=FF3B3F&hide_border=true&bg_color=0d1117&text_color=c9d1d9" height="165" alt="stats" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Elpatoteista&layout=compact&theme=radical&title_color=FF3B3F&hide_border=true&bg_color=0d1117&text_color=c9d1d9" height="165" alt="langs" />
-
-</div>
 
 ---
 

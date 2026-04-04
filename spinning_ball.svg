@@ -1,61 +1,57 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="300" height="220" viewBox="0 0 300 220">
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="180" viewBox="0 0 300 180">
   <style>
-    @keyframes spin {
-      0%   { transform: rotate(0deg); }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-18px); }
+    }
+    @keyframes shadow-pulse {
+      0%, 100% { opacity: 0.25; transform: scaleX(1); }
+      50% { opacity: 0.08; transform: scaleX(0.7); }
+    }
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
     }
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50%      { transform: translateY(-12px); }
-    }
-    @keyframes pulse-shadow {
-      0%, 100% { opacity: 0.3; rx: 40; }
-      50%      { opacity: 0.1; rx: 30; }
-    }
-    .ball-group {
-      animation: bounce 1.2s ease-in-out infinite;
-    }
-    .ball-spin {
-      transform-origin: 150px 90px;
-      animation: spin 2.5s linear infinite;
+    .bounce-group {
+      animation: bounce 1s ease-in-out infinite;
     }
     .shadow {
-      animation: pulse-shadow 1.2s ease-in-out infinite;
-    }
-    .ascii {
-      font-family: 'Courier New', Courier, monospace;
-      font-size: 13px;
-      font-weight: bold;
-      fill: #FF3B3F;
-    }
-    .lines {
-      font-family: 'Courier New', Courier, monospace;
-      font-size: 13px;
-      font-weight: bold;
-      fill: #222;
+      transform-origin: 150px 160px;
+      animation: shadow-pulse 1s ease-in-out infinite;
     }
     @media (prefers-color-scheme: dark) {
-      .lines { fill: #ccc; }
-      .ascii { fill: #FF6B6F; }
+      .ball-fill { fill: #FF4444; }
+      .ball-line { stroke: #1a1a1a; }
+      .label-text { fill: #888; }
+    }
+    @media (prefers-color-scheme: light) {
+      .ball-fill { fill: #E83030; }
+      .ball-line { stroke: #9a1a1a; }
+      .label-text { fill: #999; }
     }
   </style>
 
   <!-- Shadow -->
-  <ellipse class="shadow" cx="150" cy="195" rx="40" ry="6" fill="#FF3B3F" opacity="0.3"/>
+  <ellipse class="shadow" cx="150" cy="160" rx="38" ry="5" fill="#FF3B3F" opacity="0.25"/>
 
   <!-- Bouncing group -->
-  <g class="ball-group">
-    <!-- Spinning ball -->
-    <g class="ball-spin">
-      <text class="ascii" x="150" y="50"  text-anchor="middle">    ___     </text>
-      <text class="ascii" x="150" y="65"  text-anchor="middle">  /  🏀  \  </text>
-      <text class="ascii" x="150" y="80"  text-anchor="middle"> |---+---|  </text>
-      <text class="ascii" x="150" y="95"  text-anchor="middle"> |   |   |  </text>
-      <text class="ascii" x="150" y="110" text-anchor="middle"> |---+---|  </text>
-      <text class="ascii" x="150" y="125" text-anchor="middle">  \_____/  </text>
-    </g>
+  <g class="bounce-group">
+    <!-- Ball body -->
+    <circle class="ball-fill" cx="150" cy="80" r="45" fill="#E83030"/>
+
+    <!-- Horizontal seam -->
+    <line class="ball-line" x1="105" y1="80" x2="195" y2="80" stroke="#9a1a1a" stroke-width="2"/>
+
+    <!-- Vertical curve (left arc) -->
+    <path class="ball-line" d="M 150 35 Q 130 80 150 125" fill="none" stroke="#9a1a1a" stroke-width="2"/>
+
+    <!-- Vertical curve (right arc) -->
+    <path class="ball-line" d="M 150 35 Q 170 80 150 125" fill="none" stroke="#9a1a1a" stroke-width="2"/>
+
+    <!-- Top highlight -->
+    <ellipse cx="140" cy="62" rx="12" ry="6" fill="white" opacity="0.2"/>
   </g>
 
   <!-- Label -->
-  <text class="lines" x="150" y="215" text-anchor="middle" font-size="11" opacity="0.6">// ball.spin()</text>
+  <text class="label-text" x="150" y="178" text-anchor="middle" font-family="'Courier New', monospace" font-size="11" fill="#999" opacity="0.7">// bounce()</text>
 </svg>
