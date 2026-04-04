@@ -106,17 +106,41 @@
 
     <!-- Spinning seams clipped to ball -->
     <g class="seams" clip-path="url(#ballClip)">
-      <!-- Horizontal seam -->
-      <line x1="106" y1="100" x2="194" y2="100" stroke="#1a0a0a" stroke-width="2.5" opacity="0.6"/>
+      <!-- === MAIN CROSS SEAMS === -->
+      <!-- Horizontal band -->
+      <line x1="100" y1="100" x2="200" y2="100" stroke="#1a0a0a" stroke-width="3" opacity="0.7"/>
+      <!-- Vertical band -->
+      <line x1="150" y1="50" x2="150" y2="150" stroke="#1a0a0a" stroke-width="3" opacity="0.7"/>
 
-      <!-- Left curve -->
-      <path d="M 150 56 Q 122 100 150 144" fill="none" stroke="#1a0a0a" stroke-width="2.5" opacity="0.6"/>
-      <!-- Right curve -->
-      <path d="M 150 56 Q 178 100 150 144" fill="none" stroke="#1a0a0a" stroke-width="2.5" opacity="0.6"/>
+      <!-- === CURVED RIBS (8-panel pattern) === -->
+      <!-- Top-left rib -->
+      <path d="M 150 56 Q 118 72 106 100" fill="none" stroke="#1a0a0a" stroke-width="2.5" opacity="0.6"/>
+      <!-- Top-right rib -->
+      <path d="M 150 56 Q 182 72 194 100" fill="none" stroke="#1a0a0a" stroke-width="2.5" opacity="0.6"/>
+      <!-- Bottom-left rib -->
+      <path d="M 106 100 Q 118 128 150 144" fill="none" stroke="#1a0a0a" stroke-width="2.5" opacity="0.6"/>
+      <!-- Bottom-right rib -->
+      <path d="M 194 100 Q 182 128 150 144" fill="none" stroke="#1a0a0a" stroke-width="2.5" opacity="0.6"/>
 
-      <!-- Extra curved seam for realism -->
-      <path d="M 106 100 Q 150 75 194 100" fill="none" stroke="#1a0a0a" stroke-width="1.5" opacity="0.3"/>
-      <path d="M 106 100 Q 150 125 194 100" fill="none" stroke="#1a0a0a" stroke-width="1.5" opacity="0.3"/>
+      <!-- === SECONDARY CURVED RIBS (depth) === -->
+      <!-- Inner top-left -->
+      <path d="M 150 62 Q 126 78 112 100" fill="none" stroke="#1a0a0a" stroke-width="1.8" opacity="0.35"/>
+      <!-- Inner top-right -->
+      <path d="M 150 62 Q 174 78 188 100" fill="none" stroke="#1a0a0a" stroke-width="1.8" opacity="0.35"/>
+      <!-- Inner bottom-left -->
+      <path d="M 112 100 Q 126 122 150 138" fill="none" stroke="#1a0a0a" stroke-width="1.8" opacity="0.35"/>
+      <!-- Inner bottom-right -->
+      <path d="M 188 100 Q 174 122 150 138" fill="none" stroke="#1a0a0a" stroke-width="1.8" opacity="0.35"/>
+
+      <!-- === PEBBLE TEXTURE DOTS === -->
+      <circle cx="130" cy="82" r="1" fill="#1a0a0a" opacity="0.15"/>
+      <circle cx="170" cy="82" r="1" fill="#1a0a0a" opacity="0.15"/>
+      <circle cx="130" cy="118" r="1" fill="#1a0a0a" opacity="0.15"/>
+      <circle cx="170" cy="118" r="1" fill="#1a0a0a" opacity="0.15"/>
+      <circle cx="140" cy="90" r="0.8" fill="#1a0a0a" opacity="0.1"/>
+      <circle cx="160" cy="90" r="0.8" fill="#1a0a0a" opacity="0.1"/>
+      <circle cx="140" cy="110" r="0.8" fill="#1a0a0a" opacity="0.1"/>
+      <circle cx="160" cy="110" r="0.8" fill="#1a0a0a" opacity="0.1"/>
     </g>
 
     <!-- Highlight / shine -->
