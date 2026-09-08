@@ -2,7 +2,7 @@
 
 <!-- Animated Typing Header -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=FF3B3F&center=true&vCenter=true&width=620&height=60&lines=%F0%9F%95%B7%EF%B8%8F+Hey%2C+I'm+Patricio!;AI+%26+Computer+Vision+Engineer;Building+intelligent+vision+systems...;Dribbling+code+%26+basketballs+%F0%9F%8F%80;One+landmark+at+a+time+%E2%9A%A1" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=FF3B3F&center=true&vCenter=true&width=680&height=55&lines=%F0%9F%95%B7%EF%B8%8F+Hey%2C+I'm+Patricio!;AI+%26+Computer+Vision+Engineer;Building+intelligent+vision+systems...;Dribbling+code+%26+basketballs+%F0%9F%8F%80;One+landmark+at+a+time+%E2%9A%A1" alt="Typing SVG" />
 </a>
 
 <!-- Realistic Physics Bouncing Basketball -->
