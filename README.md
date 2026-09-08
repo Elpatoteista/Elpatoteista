@@ -107,15 +107,6 @@ class Patricio:
 
 ---
 
-### 📊 GitHub Activity & Metrics
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Elpatoteista&show_icons=true&theme=tokyonight&title_color=FF3B3F&icon_color=FF3B3F&text_color=c9d1d9&bg_color=0d1117&border_color=30363d&count_private=true" height="165" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Elpatoteista&layout=compact&theme=tokyonight&title_color=FF3B3F&text_color=c9d1d9&bg_color=0d1117&border_color=30363d" height="165" alt="Top Languages" />
-</div>
-
----
-
 ### 🌐 Languages & Interests
 
 | 🗣️ Languages | 🏀 Beyond the Code |
